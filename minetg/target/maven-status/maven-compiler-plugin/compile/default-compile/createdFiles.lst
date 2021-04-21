@@ -7,11 +7,15 @@ ru\deade\telegramBotClient\TelegramBotClient.class
 ru\deade\telegramBotClient\APIModel\TelegramUpdate.class
 ru\deade\telegramBotClient\APIModel\TelegramChat.class
 ru\deade\telegramBotClient\APIModel\TelegramMessage.class
+ru\deade\commands\SendBotMessageServiceImpl.class
 ru\deade\telegramBotClient\APIModel\TelegramPhotoSize.class
+ru\deade\commands\SendBotMessageService.class
 ru\deade\telegramBotClient\Formatting.class
 ru\deade\telegramBotClient\HTTPJsonClient.class
 ru\deade\telegramBotClient\TelegramBotClient$2.class
 ru\deade\telegramBotClient\APIModel\TelegramUser.class
 ru\deade\minetg\EventsListener.class
 ru\deade\telegramBotClient\TelegramBotClient$1.class
+ru\deade\commands\Command.class
 ru\deade\telegramBotClient\APIModel\TelegramMessageEntity.class
+ru\deade\commands\CommandName.class

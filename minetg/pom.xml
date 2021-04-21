@@ -38,17 +38,24 @@
 	    <artifactId>java-telegram-bot-api</artifactId>
 	    <version>5.1.0</version>
 	</dependency>
-	<dependency>
-	    <groupId>org.slf4j</groupId>
-	    <artifactId>slf4j-api</artifactId>
-	    <version>1.7.30</version>
-	</dependency>
+
 	<dependency>
 	    <groupId>org.slf4j</groupId>
 	    <artifactId>slf4j-simple</artifactId>
 	    <version>1.7.30</version>
 	</dependency>
-  </dependencies>
+  
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.3.RELEASE</version>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.2.3.RELEASE</version>
+  </dependency>
+</dependencies>
   
   <build>
         <!-- Uses the properties in this file for plugin.yml and config.yml -->
