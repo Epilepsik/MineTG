@@ -1,0 +1,17 @@
+ru\deade\minetg\CmdExecutor.class
+ru\deade\minetg\MineTG.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramUpdate.class
+ru\deade\minetg\telegramBotClient\HTTPJsonClient.class
+ru\deade\minetg\telegramBotClient\TelegramBotClient$2.class
+ru\deade\minetg\telegramBotClient\Formatting.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramMessageEntity.class
+ru\deade\minetg\telegramBotClient\TelegramBotClient.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramChat.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramMessage.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramPhotoSize.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramSticker.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramUser.class
+ru\deade\minetg\telegramBotClient\TelegramBotClient$1.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramCommand.class
+ru\deade\minetg\telegramBotClient\APIModel\TelegramLocation.class
+ru\deade\minetg\EventsListener.class

@@ -1,9 +1,0 @@
-telegram-bot:
-    # What type of database do you want to use?
-    admin-chat-id: 83398789
-    # Valid values: SQLITE, MYSQL, POSTGRESQL
-    expl-chat-id: -523514079
-    # Enable the database caching system, should be disabled on bungeecord environments
-    # or when a website integration is being used.
-    token: '1374164490:AAGALWupQcSIX76d0Rva4QuWOAuEQhrQgHw'
-    name: 'minetgbot'
