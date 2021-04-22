@@ -1,4 +1,4 @@
-package ru.deade.telegramBotClient;
+package ru.deade.minetg.telegramBotClient;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

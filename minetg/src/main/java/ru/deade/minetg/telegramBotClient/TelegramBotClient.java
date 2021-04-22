@@ -1,4 +1,4 @@
-package ru.deade.telegramBotClient;
+package ru.deade.minetg.telegramBotClient;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import ru.deade.telegramBotClient.APIModel.TelegramUpdate;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramUpdate;
 
 import com.google.gson.JsonArray;
 

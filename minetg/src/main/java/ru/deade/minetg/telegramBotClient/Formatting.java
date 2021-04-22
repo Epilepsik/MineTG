@@ -1,4 +1,4 @@
-package ru.deade.telegramBotClient;
+package ru.deade.minetg.telegramBotClient;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.HoverEvent;
@@ -6,9 +6,9 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import ru.deade.minetg.MineTG;
-import ru.deade.telegramBotClient.APIModel.TelegramMessage;
-import ru.deade.telegramBotClient.APIModel.TelegramMessageEntity;
-import ru.deade.telegramBotClient.APIModel.TelegramUser;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramMessage;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramMessageEntity;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramUser;
 
 public class Formatting {
 

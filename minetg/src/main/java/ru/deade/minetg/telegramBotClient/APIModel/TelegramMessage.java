@@ -1,4 +1,4 @@
-package ru.deade.telegramBotClient.APIModel;
+package ru.deade.minetg.telegramBotClient.APIModel;
 
 public class TelegramMessage {
     public long message_id;

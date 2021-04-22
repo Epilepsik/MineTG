@@ -5,10 +5,10 @@ import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import ru.deade.telegramBotClient.Formatting;
-import ru.deade.telegramBotClient.TelegramBotClient;
-import ru.deade.telegramBotClient.APIModel.TelegramMessage;
-import ru.deade.telegramBotClient.APIModel.TelegramUpdate;
+import ru.deade.minetg.telegramBotClient.Formatting;
+import ru.deade.minetg.telegramBotClient.TelegramBotClient;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramMessage;
+import ru.deade.minetg.telegramBotClient.APIModel.TelegramUpdate;
 import net.md_5.bungee.api.chat.TextComponent;
 
 public class MineTG extends JavaPlugin {
