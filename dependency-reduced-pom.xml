@@ -5,7 +5,7 @@
   <artifactId>minetg</artifactId>
   <name>minetg</name>
   <version>0.0.1-SNAPSHOT</version>
-  <url>http://maven.apache.org</url>
+  <url>http://autoworld.space</url>
   <build>
     <resources>
       <resource>

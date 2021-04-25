@@ -97,18 +97,27 @@ public class Formatting {
     }
 
     public static TextComponent tgUserToTextComponent(TelegramUser user) {
-        TextComponent userComponent = new TextComponent(user.getName().replace("§", "⅋"));
-        BaseComponent[] usernameComponent;
+    	TextComponent userComponent;
+    	BaseComponent[] usernameComponent;
+    	if (user.id == MineTG.getInstance().adminChatId) {
+    		//userComponent = new TextComponent(user.getName().replace("§", "⅋"));
+    		userComponent = new TextComponent("§4deade");
+        } else {
+        	userComponent = new TextComponent(user.getName().replace("§", "⅋"));
+        }
+    	                
         if (user.username != null && user.id != MineTG.getInstance().adminChatId) {
             usernameComponent = new ComponentBuilder("@" + user.username).create();
         } else { 
         	if (user.id == MineTG.getInstance().adminChatId) {
-        		usernameComponent = new ComponentBuilder("deade").create();
+        		usernameComponent = new ComponentBuilder("самый злой админ").create();
         		}
         	else
         		usernameComponent = new ComponentBuilder("No username").create();
         }
+        
         userComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, usernameComponent));
+        
         return userComponent;
     }
 

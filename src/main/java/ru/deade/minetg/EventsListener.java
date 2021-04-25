@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Sound;
+//import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,6 +12,9 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+
+//import ru.deade.minetg.telegramBotClient.Formatting;
+//import ru.deade.minetg.telegramBotClient.APIModel.TelegramMessageEntity;
 
 //import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 
@@ -24,15 +27,15 @@ public class EventsListener implements Listener {
 		Player player = e.getPlayer();
 		
 		e.setJoinMessage(player.getName() + "§a зашел на сервер!");
-		if (player.isOp() || player.hasPermission("group.admin")) {
-			for (Player pp : Bukkit.getOnlinePlayers()) {
-				pp.playSound(pp.getLocation(), Sound.UI_TOAST_CHALLENGE_COMPLETE, 100.0F, 100.0F);
-			}
-			e.setJoinMessage("§cАдминистратор §e" + player.getName() + "§c зашел на сервер!");
-		}
-		else {
+//		if (player.isOp() || player.hasPermission("group.admin")) {
+//			for (Player pp : Bukkit.getOnlinePlayers()) {
+//				pp.playSound(pp.getLocation(), Sound.UI_TOAST_CHALLENGE_COMPLETE, 100.0F, 100.0F);
+//			}
+//			e.setJoinMessage("§cАдминистратор §e" + player.getName() + "§c зашел на сервер!");
+//		}
+//		else {
 			player.sendMessage("Добро пожаловать!");
-		}
+//		}
 		
 		List<String> onlinePlayers = new ArrayList<String>();
         for(Player pl : Bukkit.getServer().getOnlinePlayers()) {
@@ -52,10 +55,15 @@ public class EventsListener implements Listener {
             return;
         }
 
-        String name = event.getPlayer().getName();
-        String message = event.getMessage();
-        String messageToTelegram = String.format("<%s> %s", name, message);
-        MineTG.getInstance().telegram.sendMessage(expChId, messageToTelegram);
+        
+        
+        //String name = event.getPlayer().getName();
+        //String message = event.getMessage();
+        
+//        TelegramMessageEntity messageEntity;
+        //String formatting = Formatting.addBoldAndItalicFormatting(message, )
+        //String messageToTelegram = String.format("<%s> %s", name, message);
+        //MineTG.getInstance().telegram.sendMessage(expChId, messageToTelegram);
     }
 	
 	@EventHandler

@@ -73,7 +73,7 @@ public class TelegramBotClient {
 
         if (updates.has("result")) {
             JsonArray updatesBlob = updates.getAsJsonArray("result");
-            int updateCount = updatesBlob.size();
+            //int updateCount = updatesBlob.size();
             List<TelegramUpdate> parsedUpdates = new ArrayList<TelegramUpdate>();
 
             for (JsonElement blob : updatesBlob) {

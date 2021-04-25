@@ -9,7 +9,7 @@ public class CmdExecutor implements CommandExecutor{
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (sender instanceof Player) {
-			Player player = (Player) sender;
+			//Player player = (Player) sender;
 			
 			if (cmd.getName().equalsIgnoreCase("cmd1")) {
 				//to do

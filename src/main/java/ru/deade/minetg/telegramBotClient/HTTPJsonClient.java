@@ -12,9 +12,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
+//import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonArray;
+//import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 
 public class HTTPJsonClient {

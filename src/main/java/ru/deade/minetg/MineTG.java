@@ -48,6 +48,8 @@ public class MineTG extends JavaPlugin {
 		telegram = new TelegramBotClient(telegramBotToken);
 		//getCommand("cmd1").setExecutor(new CmdExecutor());
 		//getCommand("cmd2").setExecutor(new CmdExecutor());
+		telegram.sendMessage(explChatId, "[" + Bukkit.getServer().getName() + "]" + "Start new server. Bot enabled.");
+			
 			
 		getServer().getPluginManager().registerEvents(new EventsListener(), this);
 		
@@ -57,7 +59,11 @@ public class MineTG extends JavaPlugin {
                 if (update.message != null) {
                     TelegramMessage message = update.message;
                     
-                    logger.info(message.from.first_name + " ввел: " + message.text);
+                    String id = Long.toString(message.from.id);
+                    String uName = message.from.username;
+                    String fName = message.from.getName();
+                    
+                    logger.info("User ["+id+"]["+uName+"]["+fName+"] say: " + message.text);
                     
                     long chatId = message.chat.id;
                     
@@ -65,6 +71,8 @@ public class MineTG extends JavaPlugin {
                     //logger.warning(chid+", adminChatId="+adminChatId);
                                         
                     if (chatId == explChatId) {
+                    	
+                    	
                     	String s = Character.toString(message.text.charAt(0));
                     	if (s.equalsIgnoreCase("/")) {
                     		
@@ -97,6 +105,8 @@ public class MineTG extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		this.saveConfig();
+		
+		telegram.sendMessage(explChatId, "[" + Bukkit.getServer().getName() + "]" + "Server down. И ты down.");
 	}
 	
 	
